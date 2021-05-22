@@ -1,0 +1,27 @@
+# test
+
+GET http://localhost:5000/api
+
+###
+
+#Post Product
+POST http://localhost:5000/api/products
+content-type: application/json
+
+{
+    "title" : "Titulo",
+    "price" : 5,
+    "description" : "Descripcion"
+}
+
+###Get all products
+
+GET http://localhost:5000/api/products
+
+###Get single Product
+
+GET http://localhost:5000/api/products/60a7ed2b2f792545c04bda9c
+
+###Get single Product 404
+
+GET http://localhost:5000/api/products/60a7ed2b2f792545c04bda9d
